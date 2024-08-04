@@ -3,7 +3,27 @@
   <!-- Contendor del encabezado -->
   <app-encabezado></app-encabezado>
   <!-- Contenedor del formulario -->
-  <div class="contendor-formulario"></div>
+  <div class="contendor-formulario">
+    <!-- Formulario Inicio de Sesión -->
+    <form class="formulario-inicio-sesion">
+      <h2>Bienvenido Nuevamente</h2>
+      <span>Ingresa a tu cuenta</span>
+      <!-- Contendor label e input de usuario -->
+      <div class="contenedor-input">
+        <!-- Label del input usuario -->
+        <label for="usuario">Usuario o Número celular</label>
+        <!-- Input usuario -->
+        <input appInputFormCustom id="usuario" />
+      </div>
+      <!-- Contendor label e input de contraseña -->
+      <div class="contenedor-input">
+        <!-- Label del input contraseña -->
+        <label for="contrasena">Contraseña</label>
+        <!-- Input contraseña -->
+        <input appInputFormCustom id="contrasena" />
+      </div>
+    </form>
+  </div>
   <!-- Contendor del pie de página -->
   <app-pie-de-pagina></app-pie-de-pagina>
 </main>

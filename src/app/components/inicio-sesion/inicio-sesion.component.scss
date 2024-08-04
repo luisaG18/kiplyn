@@ -5,5 +5,23 @@
   .contendor-formulario {
     flex: 1;
     overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .formulario-inicio-sesion {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      h2 {
+        color: #00136b;
+      }
+      .contenedor-input {
+        display: flex;
+        flex-direction: column;
+        label {
+          font-weight: 600;
+        }
+      }
+    }
   }
 }
