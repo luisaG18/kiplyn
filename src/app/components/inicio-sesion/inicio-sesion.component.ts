@@ -3,13 +3,13 @@ import { EncabezadoComponent } from '../general-components/encabezado/encabezado
 import { PieDePaginaComponent } from '../general-components/pie-de-pagina/pie-de-pagina.component';
 import { BtnprimaryDirective } from '../../directives/btnprimary.directive';
 import { InputFormCustomDirective } from '../../directives/input-form-custom.directive';
-import { BtnsecundaryDirective } from '../../directives/btnsecundary.directive';
+import { BtnsecondaryDirective } from '../../directives/btnsecondary.directive';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-inicio-sesion',
   standalone: true,
-  imports: [EncabezadoComponent, PieDePaginaComponent, BtnprimaryDirective, InputFormCustomDirective, BtnsecundaryDirective],
+  imports: [EncabezadoComponent, PieDePaginaComponent, BtnprimaryDirective, InputFormCustomDirective, BtnsecondaryDirective],
   templateUrl: './inicio-sesion.component.html',
   styleUrl: './inicio-sesion.component.scss',
 })

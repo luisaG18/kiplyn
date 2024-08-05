@@ -1,10 +1,10 @@
 import { Directive, ElementRef, Input, OnChanges, OnInit, Renderer2, SimpleChanges } from '@angular/core';
 
 @Directive({
-  selector: '[appBtnsecundary]',
+  selector: '[appBtnsecondary]',
   standalone: true,
 })
-export class BtnsecundaryDirective implements OnInit, OnChanges {
+export class BtnsecondaryDirective implements OnInit, OnChanges {
   // Variable input para deshabilitar/habilitar el botón
   @Input() disabled: boolean = false;
   // Variable input para marcar el estado de cargando

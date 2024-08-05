@@ -2,6 +2,8 @@
 <main class="contenedor-principal">
   <!-- Contendor del encabezado -->
   <app-encabezado></app-encabezado>
+  <!-- Botón regresar -->
+  <button appBtnsecondary colorTextButton="Black" class="button-back" (click)="goToLogin()">Regresar</button>
   <!-- Contenedor del formulario -->
   <div class="contendor-formulario">
     <!-- Formulario Registrarse -->
@@ -30,14 +32,14 @@
         <!-- Label del input contraseña -->
         <label for="contrasena">Contraseña</label>
         <!-- Input contraseña -->
-        <input appInputFormCustom id="contrasena" placeholder="Escribe tu contraseña" />
+        <input appInputFormCustom id="contrasena" placeholder="Escribe tu contraseña" type="password" />
       </div>
       <!-- Contendor label e input de confirmar contraseña -->
       <div class="contenedor-input">
         <!-- Label del input confirmar contraseña -->
         <label for="confirmarContraseña">Confirma tu contraseña</label>
         <!-- Input confirmar contraseña -->
-        <input appInputFormCustom id="confirmarContraseña" placeholder="Escribe tu contraseña" />
+        <input appInputFormCustom id="confirmarContraseña" placeholder="Escribe tu contraseña" type="password" />
       </div>
       <button appBtnprimary>Crear cuenta</button>
     </form>
