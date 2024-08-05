@@ -4,8 +4,43 @@
   <app-encabezado></app-encabezado>
   <!-- Contenedor del formulario -->
   <div class="contendor-formulario">
-    <!-- Formulario Inicio de Sesión -->
-    <form class="formulario-inicio-sesion"></form>
+    <!-- Formulario Registrarse -->
+    <form class="formulario-registrarse">
+      <div>
+        <h1>Crear una cuenta nueva</h1>
+        <span>Ingresa todos los datos para crear una cuenta</span>
+      </div>
+      <div>subir imagen</div>
+      <!-- Contendor label e input de nombre -->
+      <div class="contenedor-input">
+        <!-- Label del input nombre -->
+        <label for="nombreCompleto">Nombre completo</label>
+        <!-- Input nombre -->
+        <input appInputFormCustom id="nombreCompleto" placeholder="Escribe tu nombre" />
+      </div>
+      <!-- Contendor label e input de correo -->
+      <div class="contenedor-input">
+        <!-- Label del input correo -->
+        <label for="correoElectronico">Correo electrónico</label>
+        <!-- Input correo -->
+        <input appInputFormCustom id="correoElectronico" placeholder="Escribe tu Email" />
+      </div>
+      <!-- Contendor label e input de contraseña -->
+      <div class="contenedor-input">
+        <!-- Label del input contraseña -->
+        <label for="contrasena">Contraseña</label>
+        <!-- Input contraseña -->
+        <input appInputFormCustom id="contrasena" placeholder="Escribe tu contraseña" />
+      </div>
+      <!-- Contendor label e input de confirmar contraseña -->
+      <div class="contenedor-input">
+        <!-- Label del input confirmar contraseña -->
+        <label for="confirmarContraseña">Confirma tu contraseña</label>
+        <!-- Input confirmar contraseña -->
+        <input appInputFormCustom id="confirmarContraseña" placeholder="Escribe tu contraseña" />
+      </div>
+      <button appBtnprimary>Crear cuenta</button>
+    </form>
   </div>
   <!-- Contendor del pie de página -->
   <app-pie-de-pagina></app-pie-de-pagina>

@@ -1,0 +1,45 @@
+.contenedor-principal {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  .contendor-formulario {
+    flex: 1;
+    overflow: auto;
+    display: flex;
+    margin-top: 77px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    span {
+      font-weight: 500;
+    }
+    .formulario-registrarse {
+      display: flex;
+      flex-direction: column;
+      width: 376px;
+      gap: 20px;
+      h1 {
+        color: #00136b;
+        font-size: 30px;
+        line-height: 45px;
+      }
+      span {
+        font-weight: 400;
+      }
+      .contenedor-input {
+        display: flex;
+        flex-direction: column;
+        label {
+          font-size: 16px;
+          font-weight: 500;
+        }
+        input {
+          width: 100% !important;
+        }
+      }
+      button {
+        width: 100% !important;
+      }
+    }
+  }
+}
