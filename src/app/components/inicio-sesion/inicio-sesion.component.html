@@ -15,27 +15,19 @@
         <!-- Label del input usuario -->
         <label for="usuario">Usuario o Número celular</label>
         <!-- Input usuario -->
-        <input
-          appInputFormCustom
-          id="usuario"
-          placeholder="Escribe tu usuario"
-        />
+        <input appInputFormCustom id="usuario" placeholder="Escribe tu usuario" />
       </div>
       <!-- Contendor label e input de contraseña -->
       <div class="contenedor-input">
         <!-- Label del input contraseña -->
         <label for="contrasena">Contraseña</label>
         <!-- Input contraseña -->
-        <input
-          appInputFormCustom
-          id="contrasena"
-          placeholder="Escribe tu contraseña"
-        />
+        <input appInputFormCustom id="contrasena" placeholder="Escribe tu contraseña" />
       </div>
       <!-- Contendor botones -->
       <div class="contendor-botones">
         <button appBtnprimary>Iniciar sesión</button>
-        <button appBtnprimary>Registrarme</button>
+        <button appBtnsecundary [colorTextButton]="colorText">Registrarme</button>
       </div>
     </form>
     <span>¿Problemas para entrar? Recuperar cuenta</span>
