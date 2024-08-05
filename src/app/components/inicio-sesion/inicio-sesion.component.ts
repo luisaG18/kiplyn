@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { EncabezadoComponent } from '../encabezado/encabezado.component';
-import { PieDePaginaComponent } from '../pie-de-pagina/pie-de-pagina.component';
+import { EncabezadoComponent } from '../general-components/encabezado/encabezado.component';
+import { PieDePaginaComponent } from '../general-components/pie-de-pagina/pie-de-pagina.component';
 import { BtnprimaryDirective } from '../../directives/btnprimary.directive';
 import { InputFormCustomDirective } from '../../directives/input-form-custom.directive';
 import { BtnsecundaryDirective } from '../../directives/btnsecundary.directive';
