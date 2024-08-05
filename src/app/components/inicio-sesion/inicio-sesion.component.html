@@ -27,7 +27,7 @@
       <!-- Contendor botones -->
       <div class="contendor-botones">
         <button appBtnprimary>Iniciar sesión</button>
-        <button appBtnsecundary [colorTextButton]="colorText">Registrarme</button>
+        <button appBtnsecundary [colorTextButton]="colorText" (click)="goToRegister()">Registrarme</button>
       </div>
     </form>
     <span>¿Problemas para entrar? Recuperar cuenta</span>

@@ -4,6 +4,7 @@ import { PieDePaginaComponent } from '../general-components/pie-de-pagina/pie-de
 import { BtnprimaryDirective } from '../../directives/btnprimary.directive';
 import { InputFormCustomDirective } from '../../directives/input-form-custom.directive';
 import { BtnsecundaryDirective } from '../../directives/btnsecundary.directive';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-inicio-sesion',
@@ -13,5 +14,14 @@ import { BtnsecundaryDirective } from '../../directives/btnsecundary.directive';
   styleUrl: './inicio-sesion.component.scss',
 })
 export class InicioSesionComponent {
+  // Variable del color del botón secundary
   colorText = 'Black';
+
+  constructor(private router: Router) {}
+  /**
+   * Función para ir a la pagina de registrar
+   */
+  goToRegister() {
+    this.router.navigate(['/register']);
+  }
 }
