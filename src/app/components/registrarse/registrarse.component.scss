@@ -21,7 +21,7 @@
       display: flex;
       flex-direction: column;
       width: 376px;
-      gap: 20px;
+      gap: 15px;
       h1 {
         color: #00136b;
         font-size: 30px;
@@ -43,6 +43,10 @@
       }
       button {
         width: 100% !important;
+      }
+      .conmponent-input-file {
+        display: flex;
+        justify-content: center;
       }
     }
   }

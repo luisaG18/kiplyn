@@ -5,11 +5,12 @@ import { InputFormCustomDirective } from '../../directives/input-form-custom.dir
 import { BtnprimaryDirective } from '../../directives/btnprimary.directive';
 import { BtnsecondaryDirective } from '../../directives/btnsecondary.directive';
 import { Router } from '@angular/router';
+import { InputFileComponent } from '../general-components/input-file/input-file.component';
 
 @Component({
   selector: 'app-registrarse',
   standalone: true,
-  imports: [EncabezadoComponent, PieDePaginaComponent, InputFormCustomDirective, BtnprimaryDirective, BtnsecondaryDirective],
+  imports: [EncabezadoComponent, PieDePaginaComponent, InputFormCustomDirective, BtnprimaryDirective, BtnsecondaryDirective, InputFileComponent],
   templateUrl: './registrarse.component.html',
   styleUrl: './registrarse.component.scss',
 })
