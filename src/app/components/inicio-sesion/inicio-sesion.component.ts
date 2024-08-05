@@ -13,5 +13,5 @@ import { BtnsecundaryDirective } from '../../directives/btnsecundary.directive';
   styleUrl: './inicio-sesion.component.scss',
 })
 export class InicioSesionComponent {
-  colorText = 'Red';
+  colorText = 'Black';
 }
