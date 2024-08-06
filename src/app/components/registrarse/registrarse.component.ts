@@ -23,4 +23,11 @@ export class RegistrarseComponent {
   goToLogin() {
     this.router.navigate(['/login']);
   }
+
+  /**
+   * Función para ir a la página de confirmar código
+   */
+  goToConfirmCode() {
+    this.router.navigate(['/confirm-code']);
+  }
 }

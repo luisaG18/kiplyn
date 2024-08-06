@@ -1,0 +1,19 @@
+.contenedor-principal {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  .contendor-info {
+    flex: 1;
+    display: flex;
+    margin-top: 14px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    h3 {
+      font-weight: 600;
+      color: #2c416b;
+      font-size: 24px;
+    }
+  }
+}
