@@ -14,8 +14,8 @@
     background-color: #f1f1f1;
     button {
       position: absolute;
-      bottom: 113px;
-      left: 112px;
+      top: 0;
+      right: 6px;
       border: none;
       background-color: #2c416b;
       border-radius: 5px;
@@ -27,9 +27,15 @@
         height: 18px;
       }
     }
-    img {
+    .icon-input {
       width: 53px;
       height: 53px;
+    }
+    .image-selected {
+      width: 121px;
+      height: 122px;
+      border-radius: 25.5px;
+      object-fit: cover;
     }
   }
 }

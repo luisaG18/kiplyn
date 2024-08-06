@@ -1,9 +1,20 @@
-<!-- Contenedor del input -->
+<!-- Contenedor principal -->
 <div class="container-input">
+  <!-- Contendor del input file -->
   <div class="input-file">
-    <button>
+    <!-- Botón que abre el explorador de archivos -->
+    <button type="button" (click)="openFileExplorer()">
+      <!-- Icono del botón -->
       <img src="../../../../assets/icon/edit-svgrepo-com.svg" />
     </button>
-    <img src="../../../../assets/icon/user-3-svgrepo-com.svg" />
+    <!-- Input file oculto para poder abrir el explorador de archivos -->
+    <input type="file" #fileInput style="display: none" (change)="onFileSelected($event)" />
+    <!-- Contendor de la imagen -->
+    <div>
+      <!-- Icono por defecto sino hay imagen seleccionada -->
+      <img *ngIf="!selectedImage" class="icon-input" src="../../../../assets/icon/user-3-svgrepo-com.svg" />
+      <!-- Imagen seleccionada -->
+      <img *ngIf="selectedImage" class="image-selected" [src]="selectedImage" />
+    </div>
   </div>
 </div>
