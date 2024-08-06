@@ -3,11 +3,12 @@ import { EncabezadoComponent } from '../general-components/encabezado/encabezado
 import { PieDePaginaComponent } from '../general-components/pie-de-pagina/pie-de-pagina.component';
 import { BtnsecondaryDirective } from '../../directives/btnsecondary.directive';
 import { Router } from '@angular/router';
+import { InputFormCustomDirective } from '../../directives/input-form-custom.directive';
 
 @Component({
   selector: 'app-confirmar-codigo',
   standalone: true,
-  imports: [EncabezadoComponent, PieDePaginaComponent, BtnsecondaryDirective],
+  imports: [EncabezadoComponent, PieDePaginaComponent, BtnsecondaryDirective, InputFormCustomDirective],
   templateUrl: './confirmar-codigo.component.html',
   styleUrl: './confirmar-codigo.component.scss',
 })

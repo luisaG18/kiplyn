@@ -4,7 +4,8 @@ import { RegistrarseComponent } from './components/registrarse/registrarse.compo
 import { ConfirmarCodigoComponent } from './components/confirmar-codigo/confirmar-codigo.component';
 
 export const routes: Routes = [
-  { path: '', component: InicioSesionComponent, title: 'Iniciar sesión' },
+  { path: 'login', component: InicioSesionComponent, title: 'Iniciar sesión' },
   { path: 'register', component: RegistrarseComponent, title: 'Registrarse' },
   { path: 'confirm-code', component: ConfirmarCodigoComponent, title: 'Confirmar cófigo' },
+  { path: '**', component: InicioSesionComponent, title: 'Iniciar sesión' },
 ];
