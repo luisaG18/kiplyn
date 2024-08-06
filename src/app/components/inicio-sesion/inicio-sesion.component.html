@@ -5,9 +5,12 @@
   <!-- Contenedor del formulario -->
   <div class="contendor-formulario">
     <!-- Formulario Inicio de Sesión -->
-    <form class="formulario-inicio-sesion">
+    <form class="formulario-inicio-sesion" #loginForm="ngForm" (ngSubmit)="submitForm(loginForm)">
+      <!-- Contenedor h1 y span -->
       <div>
+        <!-- Titulo principal de la página -->
         <h1>Bienvenido Nuevamente</h1>
+        <!-- Span -->
         <span>Ingresa a tu cuenta</span>
       </div>
       <!-- Contendor label e input de usuario -->
@@ -15,21 +18,24 @@
         <!-- Label del input usuario -->
         <label for="usuario">Usuario o Número celular</label>
         <!-- Input usuario -->
-        <input appInputFormCustom id="usuario" placeholder="Escribe tu usuario" />
+        <input appInputFormCustom id="usuario" name="usuario" placeholder="Escribe tu usuario" [(ngModel)]="loginInfo.usuario" />
       </div>
       <!-- Contendor label e input de contraseña -->
       <div class="contenedor-input">
         <!-- Label del input contraseña -->
         <label for="contrasena">Contraseña</label>
         <!-- Input contraseña -->
-        <input appInputFormCustom id="contrasena" placeholder="Escribe tu contraseña" type="password" />
+        <input appInputFormCustom id="contrasena" name="contrasena" placeholder="Escribe tu contraseña" type="password" [(ngModel)]="loginInfo.password" />
       </div>
       <!-- Contendor botones -->
       <div class="contendor-botones">
+        <!-- Botón de iniciar sesión -->
         <button appBtnprimary>Iniciar sesión</button>
-        <button appBtnsecondary [colorTextButton]="colorText" (click)="goToRegister()">Registrarme</button>
+        <!-- Botón de Registrarme -->
+        <button appBtnsecondary colorTextButton="Black" (click)="goToRegister()">Registrarme</button>
       </div>
     </form>
+    <!-- Span -->
     <span>¿Problemas para entrar? Recuperar cuenta</span>
   </div>
   <!-- Contendor del pie de página -->
