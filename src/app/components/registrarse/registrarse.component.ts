@@ -6,15 +6,24 @@ import { BtnprimaryDirective } from '../../directives/btnprimary.directive';
 import { BtnsecondaryDirective } from '../../directives/btnsecondary.directive';
 import { Router } from '@angular/router';
 import { InputFileComponent } from '../general-components/input-file/input-file.component';
+import { FormsModule, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-registrarse',
   standalone: true,
-  imports: [EncabezadoComponent, PieDePaginaComponent, InputFormCustomDirective, BtnprimaryDirective, BtnsecondaryDirective, InputFileComponent],
+  imports: [EncabezadoComponent, PieDePaginaComponent, InputFormCustomDirective, BtnprimaryDirective, BtnsecondaryDirective, InputFileComponent, FormsModule],
   templateUrl: './registrarse.component.html',
   styleUrl: './registrarse.component.scss',
 })
 export class RegistrarseComponent {
+  usuarioInfo: any = {
+    imagen: '',
+    nombreCompleto: '',
+    correo: '',
+    password: '',
+    confirmPassword: '',
+  };
+
   constructor(private router: Router) {}
 
   /**
@@ -29,5 +38,12 @@ export class RegistrarseComponent {
    */
   goToConfirmCode() {
     this.router.navigate(['/confirm-code']);
+  }
+
+  /**
+   * Función de envio del formulario
+   */
+  submitForm(form: NgForm) {
+    console.log('si');
   }
 }

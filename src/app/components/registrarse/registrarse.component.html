@@ -7,41 +7,45 @@
   <!-- Contenedor del formulario -->
   <div class="contendor-formulario">
     <!-- Formulario Registrarse -->
-    <form class="formulario-registrarse">
+    <form #registerForm="ngForm" (ngSubmit)="submitForm(registerForm)" class="formulario-registrarse">
+      <!-- Contenedor h1 y span -->
       <div>
+        <!-- Titulo principal de la página -->
         <h1>Crear una cuenta nueva</h1>
+        <!-- Span -->
         <span>Ingresa todos los datos para crear una cuenta</span>
       </div>
-      <!-- Contendor componente input fil -->
+      <!-- Contendor componente input file -->
       <div class="conmponent-input-file"><app-input-file></app-input-file></div>
       <!-- Contendor label e input de nombre -->
       <div class="contenedor-input">
         <!-- Label del input nombre -->
         <label for="nombreCompleto">Nombre completo</label>
         <!-- Input nombre -->
-        <input appInputFormCustom id="nombreCompleto" placeholder="Escribe tu nombre" />
+        <input appInputFormCustom id="nombreCompleto" name="nombreCompleto" placeholder="Escribe tu nombre" />
       </div>
       <!-- Contendor label e input de correo -->
       <div class="contenedor-input">
         <!-- Label del input correo -->
         <label for="correoElectronico">Correo electrónico</label>
         <!-- Input correo -->
-        <input appInputFormCustom id="correoElectronico" placeholder="Escribe tu Email" />
+        <input appInputFormCustom id="correoElectronico" name="correoElectronico" placeholder="Escribe tu Email" />
       </div>
       <!-- Contendor label e input de contraseña -->
       <div class="contenedor-input">
         <!-- Label del input contraseña -->
         <label for="contrasena">Contraseña</label>
         <!-- Input contraseña -->
-        <input appInputFormCustom id="contrasena" placeholder="Escribe tu contraseña" type="password" />
+        <input appInputFormCustom id="contrasena" name="contrasena" placeholder="Escribe tu contraseña" type="password" />
       </div>
       <!-- Contendor label e input de confirmar contraseña -->
       <div class="contenedor-input">
         <!-- Label del input confirmar contraseña -->
         <label for="confirmarContraseña">Confirma tu contraseña</label>
         <!-- Input confirmar contraseña -->
-        <input appInputFormCustom id="confirmarContraseña" placeholder="Escribe tu contraseña" type="password" />
+        <input appInputFormCustom id="confirmarContraseña" name="confirmarContraseña" placeholder="Escribe tu contraseña" type="password" />
       </div>
+      <!-- Botón para crearCuenta -->
       <button appBtnprimary (click)="goToConfirmCode()">Crear cuenta</button>
     </form>
   </div>
